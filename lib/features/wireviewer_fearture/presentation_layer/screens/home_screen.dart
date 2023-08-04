@@ -151,8 +151,9 @@ class CharacterListItem extends StatelessWidget {
     double he = MediaQuery.of(context).size.height;
     double wi = MediaQuery.of(context).size.width;
     return Padding(
-      padding:  EdgeInsets.all(wi*0.04),
+      padding:  EdgeInsets.symmetric( vertical: he*0.002,horizontal:wi*0.05),
       child: Card(
+
         shape: RoundedRectangleBorder(
           side: BorderSide(
             width: wi*0.002,
@@ -163,8 +164,8 @@ class CharacterListItem extends StatelessWidget {
         color: ColorManager.grey2,
         child: ListTile(
           leading: SizedBox(
-            width: wi*0.15,
-            height: wi*0.15,
+            width: wi*0.2,
+            height: he*0.3,
             child: FadeInImage.assetNetwork(
               placeholder: ImageAssets.placeHolderImage,
               image: character.imageUrl,
