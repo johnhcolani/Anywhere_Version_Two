@@ -54,6 +54,10 @@ class _HomeScreenState extends State<HomeScreen> {
     double he = MediaQuery.of(context).size.height;
     double wi = MediaQuery.of(context).size.width;
     return Scaffold(
+      bottomNavigationBar: BottomAppBar(
+        color: ColorManager.darkBlue,
+        height: he*0.05,
+      ) ,
       backgroundColor: ColorManager.darkGrey,
       appBar: AppBar(
         backgroundColor: ColorManager.darkBlue,
