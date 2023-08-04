@@ -48,7 +48,13 @@ class _WebViewAppStackState extends State<WebViewAppStack> {
 
   @override
   Widget build(BuildContext context) {
+    double he = MediaQuery.of(context).size.height;
+    double wi = MediaQuery.of(context).size.width;
     return Scaffold(
+      bottomNavigationBar: BottomAppBar(
+        color: ColorManager.darkBlue,
+        height: he*0.05,
+      ) ,
       backgroundColor: Colors.blueGrey,
       appBar: AppBar(
         backgroundColor: ColorManager.darkBlue,

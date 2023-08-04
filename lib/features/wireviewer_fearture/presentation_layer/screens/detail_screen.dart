@@ -16,6 +16,10 @@ class DetailScreen extends StatelessWidget {
     double wi = MediaQuery.of(context).size.width;
 
     return Scaffold(
+      bottomNavigationBar: BottomAppBar(
+        color: ColorManager.darkBlue,
+        height: he*0.05,
+      ) ,
       backgroundColor: ColorManager.darkGrey,
       appBar: AppBar(
         backgroundColor: ColorManager.darkBlue,
